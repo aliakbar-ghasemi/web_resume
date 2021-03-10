@@ -1,0 +1,201 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 10px;
+    direction: rtl;
+}
+li{
+    list-style: none;
+    text-align: initial;
+}
+.profile_section{
+    background-color: #ebebeb;
+    border-radius: 10px;
+}
+
+.avatar_pic{
+    width: 40%;
+    border-radius: 50%;
+    margin: 10px auto;
+    text-align: center;
+    display: block;
+}
+
+.about_me{
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: justify;
+    color: rgb(59, 59, 59);
+    
+}
+.section{
+    margin: 0px -15px;
+}
+.center_title{
+    color: lightgray;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.section_title{
+    padding: 0;
+    margin: auto 0;
+    text-align: center;
+}
+.verticaltext{
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+ }
+
+
+.list_item{
+    
+}
+
+
+
+ /* #main {
+    display: flex !important;
+    flex-direction: row !important;
+} */
+
+.left-section {
+    /* width: 25vw; */
+    background-color: #ebebeb;
+}
+
+.right-section {
+    /* flex: auto; */
+    /* background-color: darkmagenta; */
+}
+
+.avatar {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar img {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.avatar_name {
+    font-size: 1.5rem;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.avatar_descryption {
+    padding-top: 0px;
+    color: gray;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.subtitle {
+    padding: 5px 0px;
+    margin-inline-start: 1px;
+    margin-top: 5px;
+    color: gray;
+}
+
+.subtitle p {
+    font-size: 1.2rem;
+    margin: auto 0;
+}
+
+.skils_title {
+    margin: 0;
+    padding: 5px 0px;
+    text-shadow: 2px;
+}
+
+.skil {
+    margin: 10px 0px;
+    background-color: #f5f7f9;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #d4d4d4;
+}
+
+.skil .list {
+    background-color: #fff !important;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.skil .title {
+    margin: 0;
+}
+
+
+/* .inline {
+    display: flex !important;
+    flex-direction: row;
+} */
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    align-self: center;
+}
+
+.subicon {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    align-self: center;
+}
+
+.skil .title .icon {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    align-self: center;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+#about_me {
+    text-align: justify;
+    color: rgb(59, 59, 59);
+}
+
+.profile {
+    text-align: justify !important;
+}
+
+.icon_contact a {
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    font-size: 1.2em;
+    margin: 0px 5px;
+    line-height: 48px;
+    border-radius: 499em;
+    color: #313131;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+.icon_contact :hover {
+    color: #fff;
+    background: #35c2be;
+}
