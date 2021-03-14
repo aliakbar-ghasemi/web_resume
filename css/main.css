@@ -1,20 +1,28 @@
+@font-face {
+    font-family: vazirFont;
+    src: url(./fonts/Vazir-Regular-FD.ttf);
+}
+
 body {
     width: 100%;
     height: 100%;
     padding: 0;
     margin: 10px;
     direction: rtl;
+    font-family: vazirFont;
 }
-li{
+
+li {
     list-style: none;
     text-align: initial;
 }
-.profile_section{
+
+.profile_section {
     background-color: #ebebeb;
     border-radius: 10px;
 }
 
-.avatar_pic{
+.avatar_pic {
     width: 40%;
     border-radius: 50%;
     margin: 10px auto;
@@ -22,42 +30,40 @@ li{
     display: block;
 }
 
-.about_me{
+.about_me {
     background-color: #f2f2f2;
     border-radius: 10px;
     padding: 10px;
     text-align: justify;
     color: rgb(59, 59, 59);
-    
 }
-.section{
+
+.section {
     margin: 0px -15px;
 }
-.center_title{
+
+.center_title {
     color: lightgray;
     text-align: center;
     margin: 0 auto;
     display: block;
 }
 
-.section_title{
+.section_title {
     padding: 0;
     margin: auto 0;
     text-align: center;
 }
-.verticaltext{
+
+.verticaltext {
     transform: rotate(90deg);
     transform-origin: left top 0;
- }
-
-
-.list_item{
-    
 }
 
+.list_item {}
 
 
- /* #main {
+/* #main {
     display: flex !important;
     flex-direction: row !important;
 } */
