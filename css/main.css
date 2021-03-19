@@ -17,9 +17,19 @@ li {
     text-align: initial;
 }
 
+
+/* li:before {
+    font-family: FontAwesome;
+    content: "\f095";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+} */
+
 .profile_section {
-    background-color: #ebebeb;
+    background-color: #f2f2f2;
     border-radius: 10px;
+    box-shadow: 4px 4px 4px #d4d4d4;
 }
 
 .avatar_pic {
@@ -31,11 +41,18 @@ li {
 }
 
 .about_me {
-    background-color: #f2f2f2;
+    background-color: #f5f7f9;
     border-radius: 10px;
-    padding: 10px;
+    padding: 10px 30px;
     text-align: justify;
     color: rgb(59, 59, 59);
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .section {
@@ -44,9 +61,10 @@ li {
 
 .center_title {
     color: lightgray;
-    text-align: center;
-    margin: 0 auto;
+    text-align: initial;
+    margin: 1rem;
     display: block;
+    font-size: 1.5rem;
 }
 
 .section_title {
@@ -132,7 +150,7 @@ li {
     background-color: #f5f7f9;
     border-radius: 5px;
     padding: 10px;
-    box-shadow: 5px 5px 5px #d4d4d4;
+    box-shadow: 3px 3px 3px #d4d4d4;
 }
 
 .skil .list {
@@ -163,6 +181,7 @@ li {
     height: 20px;
     margin: 5px;
     align-self: center;
+    font-size: 1.5rem;
 }
 
 .skil .title .icon {
@@ -204,4 +223,9 @@ li {
 .icon_contact :hover {
     color: #fff;
     background: #35c2be;
+}
+
+.description {
+    text-align: justify;
+    color: rgb(90, 90, 90);
 }
