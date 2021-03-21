@@ -1,6 +1,19 @@
 $(document).ready(function() {
     fetchAndroidList();
+    fetchKotlinList();
+    fetchFlutterList();
+    fetchFrontEndList();
+    fetchBackEndList();
 });
+
+function setListUI(list, id) {
+    var container = document.getElementById(id);
+    container.innerHTML = "";
+    for (var i = 0; i < list.length; i++) {
+        div = '<li class="col-md-6 p-2 list_item">' + list[i] + '</li>';
+        container.innerHTML += div;
+    }
+}
 
 function fetchAndroidList() {
     skils_android = [
@@ -14,12 +27,44 @@ function fetchAndroidList() {
         " (Dagger2) - Dependency Injection"
     ];
 
-    var container = document.getElementById("android_list");
-    container.innerHTML = "";
-    for (var i = 0; i < skils_android.length; i++) {
-        div = '<li class="col-md-6 p-2 list_item"> <i class="far fa-check-circle"></i> ' + skils_android[i] + '</li>';
-        container.innerHTML += div;
-    }
+    setListUI(skils_android, "android_list");
+}
+
+function fetchKotlinList() {
+    skils = [
+        "  Kotline Coroutine",
+        " (Koin) - Dependency Injection"
+    ];
+
+    setListUI(skils, "kotlin_list");
+}
+
+function fetchFlutterList() {
+    skils = [
+        "  آشنایی با فریمورک فلاتر و زبان dart",
+        " آشنا با Restful APls و ارتباط با وب سرور"
+    ];
+
+    setListUI(skils, "flutter_list");
+}
+
+function fetchFrontEndList() {
+    skils = [
+        "  Html",
+        "  Css",
+        "  Bootstrap",
+        "  Vue js"
+    ];
+
+    setListUI(skils, "frontend_list");
+}
+
+function fetchBackEndList() {
+    skils = [
+        "Familiar with Asp.Net Core"
+    ];
+
+    setListUI(skils, "backend_list");
 }
 
 // fetch('./data/android.json')

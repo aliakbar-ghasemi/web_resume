@@ -1,15 +1,23 @@
-@font-face {
-    font-family: vazirFont;
-    src: url(./fonts/Vazir-Regular-FD.ttf);
+* {
+    font-family: vazir;
 }
 
 body {
-    width: 100%;
+    /* width: 100%;
     height: 100%;
     padding: 0;
-    margin: 10px;
+    margin: 10px; */
     direction: rtl;
-    font-family: vazirFont;
+    background: #FFF;
+    background-image: url(../images/svg-path.svg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    min-width: 320px;
+}
+
+.container {
+    /* background-color: rgba(255, 255, 255, .5); */
 }
 
 li {
@@ -17,14 +25,22 @@ li {
     text-align: initial;
 }
 
-
-/* li:before {
-    font-family: FontAwesome;
-    content: "\f095";
+li:before {
+    font-family: "icomoon";
+    font-weight: 900;
+    /* content: "\f058"; */
+    content: "\eb1c";
     display: inline-block;
-    padding-right: 3px;
+    padding: 3px;
     vertical-align: middle;
-} */
+}
+
+.brands {
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 3px;
+    vertical-align: middle;
+}
 
 .profile_section {
     background-color: #f2f2f2;
@@ -60,7 +76,7 @@ li {
 }
 
 .center_title {
-    color: lightgray;
+    color: #117a8b;
     text-align: initial;
     margin: 1rem;
     display: block;
@@ -229,4 +245,14 @@ li {
 .description {
     text-align: justify;
     color: rgb(90, 90, 90);
+}
+
+.box {
+    object-fit: cover;
+    box-shadow: 0 0 10px 0 #ccc;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
 }
