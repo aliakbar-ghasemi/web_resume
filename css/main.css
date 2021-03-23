@@ -9,15 +9,20 @@ body {
     margin: 10px; */
     direction: rtl;
     background: #FFF;
-    background-image: url(../images/svg-path.svg);
-    background-size: cover;
+    background-image: url(../images/bg.png);
+    /* background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
-    min-width: 320px;
+    background-position: center center; 
+    min-width: 320px;*/
 }
 
-.container {
-    /* background-color: rgba(255, 255, 255, .5); */
+.banner {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100vw;
+    height: 25vh;
+    background: url("../images/Coding-Programming-Background-4.jpg");
+    background-size: cover;
 }
 
 li {
@@ -43,6 +48,7 @@ li:before {
 }
 
 .profile_section {
+    margin-top: -15vh;
     background-color: #f2f2f2;
     border-radius: 10px;
     box-shadow: 4px 4px 4px #d4d4d4;

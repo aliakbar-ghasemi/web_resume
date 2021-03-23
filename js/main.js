@@ -1,18 +1,18 @@
-var language;
+var strings;
 
 $(document).ready(function() {
-    initStrings();
+    //initStrings();
 
 });
 
 function getLanguage() {
-    (localStorage.getItem('language') == null) ? setLanguage('en'): false;
+    (localStorage.getItem('strings') == null) ? setLanguage('en'): false;
     $.ajax({
         url: '/language/' + localStorage.getItem('language') + '.json',
         dataType: 'json',
         async: false,
         dataType: 'json',
-        success: function(lang) { language = lang }
+        success: function(lang) { strings = lang }
     });
 }
 

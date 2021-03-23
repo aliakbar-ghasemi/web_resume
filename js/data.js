@@ -17,14 +17,19 @@ function setListUI(list, id) {
 
 function fetchAndroidList() {
     skils_android = [
-        " (Java) - Android Programming",
+        " Android (Java)",
+        " MVVM (Model-View-ViewModel)",
         " Gson, Retrofit",
         " Google Map Api",
-        " ( Crashlytics , Push Notification) – Firebase",
-        " (Room , SQLite) – DataBase",
-        " (LiveData , RxJava , RxAndroid) - Reactive Programming",
-        " (Model-View-ViewModel) MVVM",
-        " (Dagger2) - Dependency Injection"
+        " Firebase (Crashlytics, Push Notification)",
+        " DataBase (Room, SQLite)",
+        " Reactive Programming (LiveData, RxJava)",
+        " Dependency Injection (Dagger2)",
+        " Unit Test",
+        " Services and Broadcast reciever",
+        " Architecture Components(ViewModel, LiveData, Paging, Navigation, DataBinding)",
+        " Code Documentation",
+        " SOLID principles",
     ];
 
     setListUI(skils_android, "android_list");
@@ -32,8 +37,8 @@ function fetchAndroidList() {
 
 function fetchKotlinList() {
     skils = [
-        "  Kotline Coroutine",
-        " (Koin) - Dependency Injection"
+        " Kotline Coroutine",
+        " Dependency Injection (Koin)"
     ];
 
     setListUI(skils, "kotlin_list");
