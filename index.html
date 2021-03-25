@@ -5,9 +5,10 @@
     <title>Aliakbar ghasemi|علی اکبر قاسمی</title>
 
     <meta charset='utf-8'>
-    <meta name="description" content="This site is Ali akbar ghasemi (Android developer)|علی اکبر قاسمی برنامه نویس اندروید">
+    <meta name="description" content="This site is Ali Akbar Ghasemi's personal page. (Android developer)|این سایت صفحه شخصی علی اکبر قاسمی است. برنامه نویس اندروید">
     <meta name="robots" content="index, follow">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="./images/workspace.svg">
 
     <link rel="stylesheet" href="./css/font.css">
     <!-- Bootstrap CSS -->
@@ -20,7 +21,12 @@
 
 <body id="main">
     <!-- banner -->
-    <div class="banner"></div>
+    <div class="banner">
+        <select class="m-2 p-1" id="langselector" onchange="setLanguage()">
+            <option value="fa">فارسی</option>
+            <option value="en">English</option>
+          </select>
+    </div>
     <div class="container p-2">
         <!-- top section -->
         <div class="row">
@@ -29,18 +35,17 @@
                 <img class="avatar_pic" src="./images/my_pic2.jpg">
                 <h2 id="avatar_name" class="avatar_name">علی اکبر قاسمی</h2>
                 <p id="avatar_descryption" class="avatar_descryption">برنامه نویس اندروید </p>
-                <div class="profile pb-2">
+                <div id="profileInfoList" class="profile pb-2">
                     <p>سال تولد : 1371</p>
                     <p>وضعیت تاهل : متاهل</p>
                     <p>تلفن : 09358536287</p>
-
                 </div>
             </div>
 
             <!-- about me -->
             <div class="about_me col mt-1 mx-sm-0 mx-md-1 pt-4" style="padding-bottom: 70px;">
 
-                <p>
+                <p id="about_me">
                     سال 1390 در رشته مهندسی فناوری اطلاعات مشغول به تحصیل شدم و بیش از 7 سال در حوزه های مختلف ویندوز ، وب و موبایل برنامه نویسی کردم، ولی بصورت تخصصی 4 سال است که در حوزه موبایل و زبان اندروید(جاوا) مشغول به کارم و همچنان هم مشتاق به یادگیری بیشتری هستم.
 
                 </p>
@@ -48,7 +53,7 @@
                 <p>استان سکونت : تهران – مرکزی</p>
                 <p><span> سایت : </span><a href="http://aliakbar-ghasemi.ir" target="_blank" rel="noopener noreferrer">www.aliakbar-ghasemi.ir</a>
                 </p>
-                <p><span>ایمیل : </span><a href="mailto:user@example.com?subject=Subject&body=message%20goes%20here" target="_blank" rel="noopener noreferrer"> aliakbar.ghasemi1371@gmail.com</a>
+                <p><span>ایمیل : </span><a href="mailto:aliakbar.ghasemi1371@gmail.com?subject=Subject&body=message" target="_blank" rel="noopener noreferrer"> aliakbar.ghasemi1371@gmail.com</a>
                 </p>
                 <p><span> گیت هاب : </span><a href="https://github.com/aliakbar-ghasemi" target="_blank" rel="noopener noreferrer">github.com/aliakbar-ghasemi</a>
                 </p>
@@ -56,10 +61,11 @@
                 <div class="bottom row justify-content-center icon_contact px-2">
                     <a href="http://telegram.me/AliAkbar_Ghasemi" target="_blank"><span class="fab fa-telegram"></span></a>
                     <a class="d-none d-sm-block" href="https://wa.me/989358536287" target="_blank"><span class="fab fa-whatsapp"></span></a>
-                    <a href="mailto:aliakbar.ghasemi1371@gmail.com?subject=Subject&body=message" target="_blank"><span class="fab fa-google-plus-g"></span></a>
+                    <a class="d-none d-sm-block" href="mailto:aliakbar.ghasemi1371@gmail.com?subject=Subject&body=message" target="_blank"><span class="fab fa-google-plus-g"></span></a>
                     <a href="https://github.com/aliakbar-ghasemi" target="_blank"><span class="fab fa-github"></span></a>
                     <a href="https://www.linkedin.com/in/aliakbar-ghasemi-048541157/" target="_blank"><span class="fab fa-linkedin"></span></a>
                     <a class="d-none d-sm-block" href="https://www.instagram.com/aliakbar.ghasemi1371/" target="_blank"><span class="fab fa-instagram"></span></a>
+                    <a href="skype:live:.cid.dc36adca8b0549c0?add" target=""><span class="fab fa-skype"></span></a>
                 </div>
             </div>
         </div>
@@ -170,7 +176,7 @@
                                 <p>Git</p>
                             </div>
                             <ul id="" class="row m-1">
-                                <li>تسلط به دستورات رایج گیت</li>
+                                <li>تسلط به دستورات گیت</li>
                             </ul>
                         </div>
                     </div>
@@ -330,6 +336,14 @@
         </div>
     </div>
 
+    <div class="footer-dark">
+        <footer>
+            <div class="p-2">
+                <h1 class="copyright">aliakbar ghasemi © 2018</h1>
+            </div>
+        </footer>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./js/jquery.min.js"></script>
@@ -340,10 +354,7 @@
     <!-- <script src="./js/fontawesome.js"></script> -->
     <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
     <script src="./font-awesome/js/all.js"></script>
-
     <script src="./js/main.js"></script>
-
-    <div id="myData"></div>
 </body>
 
 </html>

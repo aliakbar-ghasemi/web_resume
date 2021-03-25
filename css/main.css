@@ -20,7 +20,7 @@ body {
     margin: 0 !important;
     padding: 0 !important;
     width: 100vw;
-    height: 25vh;
+    height: 10rem;
     background: url("../images/Coding-Programming-Background-4.jpg");
     background-size: cover;
 }
@@ -48,7 +48,7 @@ li:before {
 }
 
 .profile_section {
-    margin-top: -15vh;
+    margin-top: -5rem;
     background-color: #f2f2f2;
     border-radius: 10px;
     box-shadow: 4px 4px 4px #d4d4d4;
@@ -265,4 +265,17 @@ li:before {
 
 .work_item {
     padding: 0 0.5rem;
+}
+
+.footer-dark {
+    color: #f0f9ff;
+    background-color: #282d32;
+}
+
+.footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0;
 }

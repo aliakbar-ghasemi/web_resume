@@ -1,18 +1,24 @@
 var strings;
 
 $(document).ready(function() {
+    //loadLanguage();
     //initStrings();
-
+    setLanguage();
 });
 
-function getLanguage() {
-    (localStorage.getItem('strings') == null) ? setLanguage('en'): false;
+function loadLanguage() {
+
+    // if (localStorage.getItem('language') == null) {
+    //     setLanguage('fa')
+    // }
     $.ajax({
         url: '/language/' + localStorage.getItem('language') + '.json',
         dataType: 'json',
-        async: false,
-        dataType: 'json',
-        success: function(lang) { strings = lang }
+        async: true,
+        success: function(lang_strings) {
+            strings = lang_strings;
+            initStrings();
+        }
     });
 }
 
@@ -29,15 +35,30 @@ function setLanguage() {
         document.getElementById("main").style.textAlign = "initial";
     }
 
-    initStrings();
+    loadLanguage();
 }
 /**
  * set string depends on language
  */
 function initStrings() {
-    getLanguage();
-    $('#avatar_name').text(language.avatar_name);
-    $('#avatar_descryption').text(language.avatar_descryption);
-    $('.skils_title').text(language.skils);
-    $('#about_me').text(language.aboutme)
+    //loadLanguage();
+    $('#avatar_name').text(strings.avatar_name);
+    $('#avatar_descryption').text(strings.avatar_descryption);
+    $('#about_me').text(strings.aboutme);
+    // $('.skils_title').text(strings.skils);
+    setStringListUI("profileInfoList", strings.profileInfoList);
+}
+
+function setStringListUI(id, jsonData) {
+    var container = document.getElementById(id);
+    container.innerHTML = "";
+    Object.keys(jsonData).forEach(function(key) {
+        var value = jsonData[key];
+        div = '<p class="px-2">' + key + " : " + value + '</p>';
+        container.innerHTML += div;
+    });
+    // for (var i = 0; i < list.length; i++) {
+    //     div = '<p class="px-2">' + list[i] + '</p>';
+    //     container.innerHTML += div;
+    // }
 }
