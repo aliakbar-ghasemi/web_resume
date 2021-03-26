@@ -22,10 +22,31 @@
 <body id="main">
     <!-- banner -->
     <div class="banner">
-        <select class="m-2 p-1" id="langselector" onchange="setLanguage()">
-            <option value="fa">فارسی</option>
-            <option value="en">English</option>
-          </select>
+
+
+        <div class="dropdown language-dropdwn">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                <img src="./images/language.svg" class="img-radius-30 img-15 headerflags" alt="language">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right notification language-slector-container">
+                <div class="noti-head">
+                    <h6 class="d-inline-block m-b-0"></h6>
+                </div>
+                <ul>
+                    <li>
+                        <a onclick="setLanguage('en')">English</a>
+                    </li>
+                    <li>
+                        <a onclick="setLanguage('fa')">فارسی</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- <select class="m-2 p-1" id="langselector" onchange="setLanguage()">
+            <option value="fa" style="background-image: url(./images/android.svg);">فارسی</option>
+            <option value="en" style="background-image: url(./images/android.svg);">English</option>
+          </select> -->
     </div>
     <div class="container p-2">
         <!-- top section -->
@@ -65,7 +86,7 @@
                     <a href="https://github.com/aliakbar-ghasemi" target="_blank"><span class="fab fa-github"></span></a>
                     <a href="https://www.linkedin.com/in/aliakbar-ghasemi-048541157/" target="_blank"><span class="fab fa-linkedin"></span></a>
                     <a class="d-none d-sm-block" href="https://www.instagram.com/aliakbar.ghasemi1371/" target="_blank"><span class="fab fa-instagram"></span></a>
-                    <a href="skype:live:.cid.dc36adca8b0549c0?add" target=""><span class="fab fa-skype"></span></a>
+                    <a href="https://join.skype.com/invite/dlP9SgWPBLXu" target="_blank"><span class="fab fa-skype"></span></a>
                 </div>
             </div>
         </div>

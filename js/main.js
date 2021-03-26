@@ -22,8 +22,8 @@ function loadLanguage() {
     });
 }
 
-function setLanguage() {
-    var lang = document.getElementById("langselector").value;
+function setLanguage(lang) {
+    //var lang = document.getElementById("langselector").value;
     //print("lang:"+lang)
     localStorage.setItem('language', lang);
     if (lang == "en") {
